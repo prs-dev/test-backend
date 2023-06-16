@@ -127,7 +127,7 @@ app.get("/api/checkout", async (req, res) => {
         // const email = req.body.email;
         // const amount = req.body.amount;
         const data = new insta.PaymentData();
-        data.setRedirectUrl('http://localhost:5173/success');
+        data.setRedirectUrl('https://consultv3.netlify.app/success');
         data.purpose = "test payment";
         data.amount = 2000;
         data.name = "test";
